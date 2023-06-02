@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio M7</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário do maior número</h1>
+
+        <form id="numbers">
+            <input type="number" id="numero-menor" required placeholder="Digite um número qualquer"/>
+            <input type="number" id="numero-maior" required placeholder="Digite um número maior que o anterior"/>
+            <p class="error-message">
+                O segundo número precisa ser maior que o primeiro
+            </p>
+            <button id="btn-conferir" type="submit">Conferir</button>
+        </form>
+        <p class="sucess-message">
+        </p>
+    </div>
+</body>
+    <script src="./main.js"></script>
+</html>
