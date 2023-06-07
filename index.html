@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC - Registro de usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./imagens/logo_ebac.png" alt="Logo EBAC">
+            <h1>Bem Vindo ao Sistema EBAC de<br> Registro de alunos e funcionarios </h1>
+            <ul>
+                <li>
+                    <a href="#login" id="login-btn">Fazer login</a>
+                </li>
+                <li>
+                    <a href="#registro" id="registro-btn">Fazer cadastro</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <section class="login" id="login">
+            <h1 >Ola Ebacer!</h1>
+            <h2>Digite seus dados<br> para acessar o portal</h2>
+            <form class="formLogin">
+                <div>
+                    <label for="emailLogin">Email:<br></label>
+                    <input type="email" id="emailLogin" placeholder="Digite seu email.." />
+                </div>
+                <div>
+                    <label for="senhaLogin">Senha:<br></label>
+                    <input type="password" id="senhaLogin" placeholder="Digite sua senha.." />
+                </div>                              
+                    <button type="submit" class="botaoLogin">Login</button>
+            </form>
+        </section>
+        <section class="registro" id="registro">
+            <h1>Ola Futuro Ebacer!</h1>
+            <h2>Digite seus dados para<br> se cadastrar no portal</h2>
+            <form class="formCadastro">
+                <div>
+                    <label for="nomeCadastro">Nome Completo:<br></label>
+                    <input type="text" id="nomeCadastro" name="nomeCadastro" placeholder="Digite seu nome completo">
+                </div>
+                <div>
+                    <label for="emailCadastro">Email:<br></label>
+                    <input type="email" id="emailCadastro" name="emailCadastro" placeholder="Digite seu email">
+                </div>
+                <div>
+                    <label for="telefoneCadastro">Telefone:<br></label>
+                    <input type="tel" id="telefoneCadastro" name="telefoneCadastro" >
+                </div>
+                <div>
+                    <label for="cpfCadastro">CPF:<br></label>
+                    <input type="text" id="cpfCadastro" name="cpfCadastro" placeholder="Digite seu CPF">
+                </div>
+                <div>
+                    <label for="enderecoCadastro">Rua:<br></label>
+                    <input type="text" id="enderecoCadastro" name="enderecoCadastro" placeholder="Digite seu endereço completo">
+                </div>
+                <div id="numBairro">
+                    <div>
+                        <label for="numeroCasa">N°:<br></label>
+                        <input type="number" id="numeroCasa" name="numeroCasa" placeholder="000" >
+                    </div>
+                    <div id="divBairro">
+                        <label for="bairroCasa">Bairro:<br></label>
+                        <input type="text" id="bairroCasa" name="bairroCasa" placeholder="Seu bairro" >
+                    </div>
+                </div>
+                <div>
+                    <label for="cepCadastro">CEP:<br></label>
+                    <input type="text" id="cepCadastro" name="cepCadastro" placeholder="Digite seu CEP">
+                </div>
+                <button type="submit" class="botaoCadastro">Cadastrar</button>
+            </form>
+        </section>
+    </div>
+
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
+
+

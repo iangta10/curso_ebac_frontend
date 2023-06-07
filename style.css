@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ec991e;
+    color: white;    
+}
+
+header{
+    background-color: #d88200;
+}
+
+header .container{
+    font-weight: bold;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+}
+
+header img{
+    height: 48px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+header li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 16px auto;
+    display: flex;  
+}
+
+.container > .registro,
+.container > .login{
+    margin: 0 auto;
+}
+
+.login h1,
+.login h2{
+    text-align: center;
+    padding: 3px 0;
+}
+
+.login h1{
+    font-size: 26px;
+}
+
+form{
+    margin: 8px 0;
+    margin-left: 15px;
+}
+
+form button{
+    margin-top: 5px; 
+    padding: 2px 5px ;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;    
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+form label{
+    font-size: 18px ;
+}
+
+form input{
+    padding: 2px 0;
+    width: 200px;
+}
+
+form #numBairro{
+    display: flex;
+}
+
+form #divBairro{
+    margin-left: 20px;
+}
+
+#numeroCasa{
+    width: 50px;
+}
+
+#bairroCasa{
+    width: 130px;
+}
+
+form div{
+    margin-bottom: 5px;
+}
+
+.login{
+    display: none;
+}
+
+
+/*
+*/
+
