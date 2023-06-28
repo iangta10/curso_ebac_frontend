@@ -1,0 +1,82 @@
+@corSucesso: #27ae60;
+@corBotao: #2ecc71;
+@corErro: red;
+@corTexto: white;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.formAtributos{
+    display: block;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+
+.container {
+    margin: 80px auto;
+    max-width: 640px;
+    width: 100%;
+
+    h1{
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    .form{
+        margin-top: 40px;
+
+        input{
+            .formAtributos();
+
+            .error{
+                color: @corErro;
+                border-color: @corErro;
+                outline-color: @corErro;
+            }
+        }
+        textarea{
+            .formAtributos();
+        }
+
+        button{
+            .formAtributos();
+            background-color: @corBotao;
+            border: none;
+            text-transform: uppercase;
+            color: @corTexto;
+            font-weight: bold;
+            font-size: 18px;
+            font-style: italic;
+            cursor: pointer;
+
+            &:hover{
+                background-color: @corSucesso;
+            }
+        }
+
+        .error-message{
+            font-size: 12px;
+            padding: 8px;
+            background-color: @corErro;
+            color: @corTexto;
+            margin-bottom: 8px;
+            display: none;
+        }
+    }
+
+    .sucess-message{
+        background-color: @corSucesso;
+        padding: 16px;
+        color: @corTexto;
+        display: none;
+    }
+}
